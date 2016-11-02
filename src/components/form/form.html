@@ -1,6 +1,6 @@
 <form novalidate [formGroup]="form">
   <ion-list>
-    <div *ngFor="let input of inputs">
+    <div *ngFor="let input of inputsForms">
       <!-- Input Text -->
       <ion-item *ngIf="input.type == 'text'">
         <ion-label>{{ input.label }}</ion-label>
