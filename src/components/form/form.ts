@@ -3,10 +3,10 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 
 
 @Component({
-  selector: 'form',
+  selector: 'my-form',
   templateUrl: 'form.html'
 })
-export class FormComponenet {
+export class FormComponent {
 
   @Input() inputs = [];
   form: FormGroup;
@@ -17,9 +17,7 @@ export class FormComponenet {
     this.form = this.makeForm;
   }
 
-  ngOnInit(){
-
-  }
+  ngOnInit(){}
 
   private get makeForm(){
     let inputs = {};
