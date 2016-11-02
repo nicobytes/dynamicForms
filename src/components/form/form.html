@@ -1,0 +1,10 @@
+<form novalidate [formGroup]="form">
+  <ion-list>
+    <div *ngFor="let input of inputs">
+      <ion-item *ngIf="input.type == 'text'">
+        <ion-label></ion-label>
+        <ion-input type="text" [formControlName]="input.name"></ion-input>
+      </ion-item>
+    </div>
+  </ion-list>
+</form>
